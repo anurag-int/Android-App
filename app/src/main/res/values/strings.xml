@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="previousMedicalConditions_prompt">Choose Previous Medical Conditions</string>
+    <string-array name="disease_array">
+        <item>Select Previous Disease if any</item>
+        <item>Certain infectious and parasitic diseases</item>
+        <item>Neoplasms</item>
+        <item>Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism</item>
+        <item>Endocrine, nutritional and metabolic diseases</item>
+        <item>Mental, Behavioral and Neurodevelopmental disorders</item>
+        <item>Diseases of the nervous system</item>
+        <item>Diseases of the eye and adnexa</item>
+        <item>Diseases of the ear and mastoid process</item>
+        <item>Diseases of the circulatory system</item>
+        <item>Diseases of the respiratory system</item>
+        <item>Diseases of the digestive system</item>
+        <item>Diseases of the skin and subcutaneous tissue</item>
+        <item>Diseases of the musculoskeletal system and connective tissue</item>
+        <item>Diseases of the genitourinary system</item>
+        <item>Pregnancy, childbirth and the puerperium</item>
+        <item>Certain conditions originating in the perinatal period</item>
+        <item>Congenital malformations, deformations and chromosomal abnormalities</item>
+        <item>Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified</item>
+        <item>Injury, poisoning and certain other consequences of external causes</item>
+        <item>Codes for special purposes</item>
+        <item>External causes of morbidity</item>
+        <item>Factors influencing health status and contact with health services</item>
+        <item>None</item>
+
+
+    </string-array>
+</resources>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Patient Form"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <LinearLayout
+            android:isScrollContainer="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="200px"
+            android:layout_marginRight="70px"
+            android:padding="40px"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginBottom="5px"
+            android:orientation="vertical"
+            android:paddingLeft="40px"
+            android:paddingRight="40px">
+
+
+            <EditText
+                android:id="@+id/editTextPatientName"
+                android:layout_width="wrap_content"
+                android:background="@drawable/input_border"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginBottom="6dp"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="Patient Name"
+                android:inputType="text"
+                android:paddingLeft="20px" />
+
+
+            <EditText
+                android:id="@+id/editTextSymptoms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:hint="Symptons"
+                android:inputType="text"
+                android:textSize="50px"
+                android:paddingLeft="20px"
+                android:padding="8dp"
+                android:layout_marginBottom="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.079"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="139dp" />
+
+                <EditText
+                    android:id="@+id/editTextPatientContactNumber"
+                    android:background="@drawable/input_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="12"
+                    android:hint="Contact No"
+                    android:padding="8dp"
+                    android:layout_marginBottom="6dp"
+                    android:inputType="phone"
+                    android:paddingLeft="20px"
+                    android:textSize="50px"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="209dp" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:padding="8dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/input_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="email"
+                android:paddingLeft="20px"
+                android:inputType="textEmailAddress"
+                android:textSize="50px" />
+
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/showDateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Date of Birth" />
+
+            <TextView
+                android:id="@+id/selectedDateTextView"
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:textSize="18sp" />
+
+
+            <Spinner
+                android:id="@+id/previousMedicalConditions"
+                android:background="@drawable/input_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="20dp"
+                android:padding="8dp"
+                android:layout_marginBottom="6dp"
+                android:prompt="@string/previousMedicalConditions_prompt" />
+
+            <EditText
+                android:id="@+id/editTextBloodPressure"
+                android:layout_width="wrap_content"
+                android:background="@drawable/input_border"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginBottom="6dp"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="Blood Pressure"
+                android:inputType="numberDecimal"
+                android:maxLength="3"
+                android:paddingLeft="20px" />
+
+            <EditText
+                android:id="@+id/editTextHeartRate"
+                android:background="@drawable/input_border"
+                android:layout_width="wrap_content"
+                android:padding="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20px"
+                android:maxLength="3"
+                android:ems="10"
+                android:hint="HearRate"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextTemperature"
+                android:layout_width="wrap_content"
+                android:padding="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_border"
+                android:paddingLeft="20px"
+                android:ems="10"
+                android:hint="Temperature"
+                android:maxLength="2"
+                android:inputType="numberDecimal" />
+
+
+
+            <Spinner
+                android:id="@+id/insurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_border"
+                android:padding="8dp"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="6dp"
+                android:prompt="@string/insuranceprovider_prompt" />
+
+
+
+            <EditText
+                android:id="@+id/editTextPharmasy"
+                android:layout_width="wrap_content"
+                android:background="@drawable/input_border"
+                android:padding="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Pharmasy"
+                android:inputType="text"
+                android:paddingLeft="20px" />
+
+            <EditText
+                android:id="@+id/editTextNameOfPhysican"
+                android:layout_width="wrap_content"
+                android:padding="8dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/input_border"
+                android:paddingLeft="20px"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name Of Physican"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextContactNoOfPhysican"
+                android:layout_width="wrap_content"
+                android:padding="8dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/input_border"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20px"
+                android:ems="10"
+                android:hint="Contact No. Of Physican"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextSignature"
+                android:layout_width="wrap_content"
+                android:background="@drawable/input_border"
+                android:padding="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20px"
+                android:ems="10"
+                android:hint="signature"
+                android:inputType="text" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:text="Submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

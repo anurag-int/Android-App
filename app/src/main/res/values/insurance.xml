@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insuranceprovider_prompt">Select Insurance</string>
+    <string-array name="insurance">
+        <item>Select Insurance</item>
+        <item>United HealthCare </item>
+        <item>Aetna</item>
+    </string-array>
+</resources>
